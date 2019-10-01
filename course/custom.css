@@ -1,9 +1,43 @@
+@font-face {
+    font-family: 'karlabold';
+    src: url('../dist/fonts/karla-bold-webfont.woff2') format('woff2'),
+         url('../dist/fonts/karla-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'karlabolditalic';
+    src: url('../dist/fonts/karla-bolditalic-webfont.woff2') format('woff2'),
+         url('../dist/fonts/karla-bolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'karlaitalic';
+    src: url('../dist/fonts/karla-italic-webfont.woff2') format('woff2'),
+         url('../dist/fonts/karla-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'karlaregular';
+    src: url('../dist/fonts/karla-regular-webfont.woff2') format('woff2'),
+         url('../dist/fonts/karla-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 /* stylelint-disable selector-list-comma-newline-after */
 
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Karla', sans-serif !important;
+body, h1, h2, h3, h4, h5, h6 {
+  font-family: 'karlabold','karlabolditalic','karlaitalic', 'karlaregular', "Open Sans", "Helvetica Neue" !important;
 }
+
 
 .display-4 {
   font-size: 2.5rem;
@@ -59,58 +93,3 @@ h1, h2, h3, h4, h5, h6 {
   .h-md-250 { height: 250px; }
 }
 
-/*
- * Blog name and description
- */
-.blog-title {
-  margin-bottom: 0;
-  font-size: 2rem;
-  font-weight: 400;
-}
-.blog-description {
-  font-size: 1.1rem;
-  color: #999;
-}
-
-@media (min-width: 40em) {
-  .blog-title {
-    font-size: 3.5rem;
-  }
-}
-
-/* Pagination */
-.blog-pagination {
-  margin-bottom: 4rem;
-}
-.blog-pagination > .btn {
-  border-radius: 2rem;
-}
-
-/*
- * Blog posts
- */
-.blog-post {
-  margin-bottom: 4rem;
-}
-.blog-post-title {
-  margin-bottom: .25rem;
-  font-size: 2.5rem;
-}
-.blog-post-meta {
-  margin-bottom: 1.25rem;
-  color: #999;
-}
-
-/*
- * Footer
- */
-.blog-footer {
-  padding: 2.5rem 0;
-  color: #999;
-  text-align: center;
-  background-color: #f9f9f9;
-  border-top: .05rem solid #e5e5e5;
-}
-.blog-footer p:last-child {
-  margin-bottom: 0;
-}
