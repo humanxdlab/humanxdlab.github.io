@@ -151,3 +151,7 @@ margin: 0;
     line-height: 1.2;
     color: #000;
 }
+
+.img-stakeholders{
+  max-height:40px !important;
+}
