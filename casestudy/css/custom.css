@@ -155,3 +155,110 @@ margin: 0;
 .img-stakeholders{
   max-height:40px !important;
 }
+
+
+
+/*Folio.html*/
+
+
+.jumbotron {
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+  margin-bottom: 0;
+  background-color: #fff;
+}
+@media (min-width: 768px) {
+  .jumbotron {
+    padding-top: 6rem;
+    padding-bottom: 1rem;
+  }
+}
+
+.jumbotron p:last-child {
+  margin-bottom: 0;
+}
+
+.jumbotron-heading {
+  font-weight: 300;
+}
+
+.jumbotron .container {
+  max-width: 40rem;
+}
+
+footer {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+footer p {
+  margin-bottom: .25rem;
+}
+
+
+
+
+/* social icons */
+ul.link-icons {
+  display: inline-block;
+  list-style-type: none;
+  margin-left: auto;
+  overflow: hidden;
+}
+
+.link-icons li {
+  float: left;
+}
+
+.link-icons li a {
+  display: block;
+  color: #a5b1c2;
+  text-align: center;
+  padding: 0px 16px;
+  text-decoration: none;
+}
+
+.link-icons a :hover{
+  color: #4b6584;
+}
+
+
+.box {
+  transition: box-shadow .3s;
+  background: #fff;
+  float: left;
+
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+     border: 1px solid rgba(210, 210, 210, 0.42); 
+    border-radius: .25rem;
+
+
+
+  
+}
+.box:hover {
+  box-shadow: 0 0 11px rgba(33,33,33,.2); 
+}
+
+
+
+/*svg icons*/
+.svg-inline--fa {
+    display: inline-block;
+    font-size: inherit;
+    height: 1em;
+    overflow: visible;
+    vertical-align: -.125em;
+}
+
+.svg-inline--fa.fa-fw {
+    width: 1.25em;
+}
