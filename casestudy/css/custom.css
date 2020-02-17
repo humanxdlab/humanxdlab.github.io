@@ -265,7 +265,20 @@ ul.link-icons {
   box-shadow: 0 0 11px rgba(33,33,33,.2); 
 }
 
-
+.stripe {
+  background-color:#000;
+  position: relative;
+  display: grid;
+}
+.stripe:before {
+  content:"";
+  background-color:#000;
+  position: absolute;
+  height: 100%;
+  left: -100vw;
+  right: 100%;
+  z-index: -1;
+}
 
 /*svg icons*/
 .svg-inline--fa {
