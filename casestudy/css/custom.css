@@ -183,6 +183,7 @@ a:visited {
   padding-bottom: 1rem;
   margin-bottom: 0;
   background-color: #fff;
+  border-radius: 0rem !important;
 }
 @media (min-width: 768px) {
   .jumbotron {
@@ -306,3 +307,16 @@ ul.link-icons {
     font-size: 1em;
     line-height: 24px;
 }
+
+/*
+div.masthead {
+    margin-bottom: 50px;
+    background: no-repeat center center;
+    background-color: #868e96;
+    background-attachment: scroll;
+    position: relative;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}*/
