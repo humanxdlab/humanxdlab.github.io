@@ -153,6 +153,9 @@ a:visited {
     border-radius: 0 3px 3px 0;
 }
 
+
+
+
 .flex-auto {
     -ms-flex: 0 0 auto;
     flex: 0 0 auto;
@@ -279,10 +282,27 @@ ul.link-icons {
     background-clip: border-box;
     border: 1px solid rgba(210, 210, 210, 0.42);
     border-radius: .25rem;
+    margin-bottom: 1em;
 }
 
 .box:hover {
     box-shadow: 0 0 11px rgba(33, 33, 33, .2);
+}
+
+
+.box-body{
+    padding-left: 20px;
+    
+    position: absolute;
+    top: 21px;
+}
+
+.box-body p {
+    color: #fff !important;
+}
+
+.box-body-img {
+    border-radius: .25rem;
 }
 
 .stripe {
@@ -324,8 +344,7 @@ ul.link-icons {
 }
 
 .text-muted {
-    color: #6b6b6b !important;
-    font-size: 1em;
+    color: #cecece !important;
     line-height: 24px;
 }
 
