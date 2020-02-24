@@ -281,7 +281,7 @@ ul.link-icons {
     background-color: #fff;
     background-clip: border-box;
     border: 1px solid rgba(210, 210, 210, 0.42);
-    border-radius: .25rem;
+    border-radius: 1rem;
     margin-bottom: 1em;
 }
 
@@ -302,7 +302,7 @@ ul.link-icons {
 }
 
 .box-body-img {
-    border-radius: .25rem;
+    border-radius: 1rem;
 }
 
 .stripe {
