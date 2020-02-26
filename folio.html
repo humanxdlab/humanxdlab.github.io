@@ -15,6 +15,27 @@
      <link href="./casestudy/css/bootstrap.min.css" rel="stylesheet">
 
     <style>
+      .content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+    color: #000;
+    background-color: #fff;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+
+}
+
+.header {
+  color: #f1f1f1;
+}
+
+
       .bd-placeholder-img {
         font-size: 1.125rem;
         text-anchor: middle;
@@ -37,13 +58,50 @@
   </head>
 
   <body>
-  
+
+
+
+
+    <div class="jumbotron p-4 p-md-5 text-white bg-yuvoh">
+        <div class="row">
+            <div class="col-md-8 offset-md-2" style="color: black">
+
+             
+        <div class="navbar-light header" id="myHeader" style="z-index: 200;">
+
+
+        <div class="navbar-light header" id="myHeader" style="z-index: 200;">
+  <ul class="nav nav-pills">
+    <li class="nav-item">
+      <a class="nav-link" href="#cases" style="color: #002E44;">Work</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#archives" style="color: #002E44;">Archives</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#testimonials" style="color: #002E44;">Testimonials</a>
+    </li>  
+  </ul>
+  </div>
+
+  </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
 
 <main role="main">
 
+
   <section class="jumbotron">
     <div class="container">
+
       <h1 class="jumbotron-heading">Arindra Das</h1>
+
+
       <p class="lead">Hi, 
 
 I’m a design practitioner with 8+ years of experience and three masters including MSc. in Human-Computer Interaction (HCI) from <a href="https://www.ucl.ac.uk/prospective-students/graduate/taught-degrees/human-computer-interaction-msc" target="_blank">University College London</a>.<br><br>
@@ -76,14 +134,21 @@ As an engineer turned designer, I understand the execution mindset alongside des
             </li>
 
           </ul>
+<br><br>
+
+
+
     </div>
   </section>
 
   <div class="album py-5">
     <div class="container">
+      <div id="cases"> </div><br><br>
+<h3 style="text-align: center;" >Case studies</h3><br><br>
 
       <div class="row">
-       
+         
+
 
 
  <div class="col-md-4">
@@ -260,7 +325,6 @@ As an engineer turned designer, I understand the execution mindset alongside des
 
       </div>
 
-      <br><br>
     </div>
   </div>
 
@@ -270,13 +334,12 @@ As an engineer turned designer, I understand the execution mindset alongside des
 
  <div class="jumbotron p-4 p-md-5 bg-white">
            
-
+ <div id="archives"> </div><br><br><br>
                 
-
-              <h3>Archives</h3>
-               <br>
-                <br> <br>
-                <br><br>
+<div class="col-md-8 offset-md-2" style="text-align: center;"> <h3 >Archives</h3></div>
+             
+        
+                
               <div class="row">
 <!-- <div class="col-md-4">
 <img src="./casestudy/assets/folio-archive/archive-trd.jpg" class="img-fluid box-body-img" alt="Responsive image">
@@ -338,21 +401,21 @@ As an engineer turned designer, I understand the execution mindset alongside des
     </div>
 
 
- <div class="jumbotron p-4 p-md-5 text-white bg-dark">
+ <div class="jumbotron p-4 p-md-5">
 
         <div class="col-md-12" style="text-align: center;">
             <br>
+             <div id="testimonials"> </div><br><br><br>
             <h6>TESTIMONIALS</h6>
             <br>
             <br>
    
             <div class="row">
                 <div class="col-md-8 offset-md-2">
-                    <br>
-                    <br>
+                   
                     <br>
                     <div style="text-align: center">
-                        <p class="col-md-12" style="color: #A6B9C0;"><i>I was Arindra's supervisor for two projects as part of the Microsoft Industry Exchange programme, both focusing on next generation health and social care… <br><br>
+                        <p class="col-md-12" style="color: #676767;"><i>I was Arindra's supervisor for two projects as part of the Microsoft Industry Exchange programme, both focusing on next generation health and social care… <br><br>
 
 … He demonstrated the ability to determine the applicability of different technologies & concepts to specific situations and choose the most suitable. Such high-level skills are particularly important when developing or prototyping new technologies and products.</i></p>
                         <br>
@@ -366,7 +429,7 @@ As an engineer turned designer, I understand the execution mindset alongside des
 <br>
                     <br>
  <div style="text-align: center">
-                        <p class="col-md-12" style="color: #A6B9C0;"><i> I have known Arindra since June 2015, when we met in Startupbootcamp during the Selection Days. 
+                        <p class="col-md-12" style="color: #676767;"><i> I have known Arindra since June 2015, when we met in Startupbootcamp during the Selection Days. 
                           <br><br>Arindra since then has constantly shown his support by advising my team with product interactions for our app and website that creates a personal or commercial identity and verifiable documents on a distributed ledger.
 It was impressive as in a very short time Arindra understood the core concepts of Blockchain and provided his advice on developing a conversational User interface for Tradle app.
 
@@ -383,7 +446,7 @@ It was impressive as in a very short time Arindra understood the core concepts o
 <br>
                     <br>
                     <div style="text-align: center">
-                        <p class="col-md-12" style="color: #A6B9C0;"><i> His experience with startups as well as a wide range of domain expertise in technology, have been reflected from his mentoring profile where he is advising several high-tech UK startups with their product that includes startups based on machine learning, financial tech and SAAS based tools for businesses.
+                        <p class="col-md-12" style="color: #676767;"><i> His experience with startups as well as a wide range of domain expertise in technology, have been reflected from his mentoring profile where he is advising several high-tech UK startups with their product that includes startups based on machine learning, financial tech and SAAS based tools for businesses.
 
                           <br><br>Mentoring startups at MassChallenge’s accelerator program requires sincere commitment and dedication for a period of four months. Arindra took the time to be a mentor alongside his regular working hours providing a significant contribution to the digital economy.
 
@@ -444,5 +507,19 @@ It was impressive as in a very short time Arindra understood the core concepts o
             </p>
         </div>
     </footer>
+    <script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
 </body>
 </html>
