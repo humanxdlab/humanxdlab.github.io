@@ -118,6 +118,7 @@ a:visited {
     }
 }
 
+
 .bg-color {
     background-color: #5118EA!important;
 }
@@ -225,7 +226,7 @@ a:visited {
 
 .jumbotron-heading {
     font-weight: 300;
-    font-size: 3.2em;
+    font-size: 3em;
 }
 
 .jumbotron .container {
