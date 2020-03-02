@@ -100,11 +100,7 @@
                     <br>
                     <br> I've been working in the digital space for over a decade. During this time, I've had the opportunity to work on projects that involved technologies such as AI/ML, Big Data, WebRTC, Voice, AR/VR, Distributed ledger (Blockchain), Dashboards and Search.
                     <br>
-                    <br> As a design practitioner, I’m both strategic + hands-on. I've shipped multiple (end-to-end design) products managing it from initial discovery (concept) to final deliverables; managed teams of designers and developers; negotiated with senior stakeholders as well as mentor junior colleagues. I also run events for <span id="panelPrecios">
-<a data-toggle="tooltip" title="<img src='./casestudy/assets/cover-yv.jpg' />">
-       underrepresented communities.
-      </a>
-    </span>
+                    <br> As a design practitioner, I’m both strategic + hands-on. I've shipped multiple (end-to-end design) products managing it from initial discovery (concept) to final deliverables; managed teams of designers and developers; negotiated with senior stakeholders as well as mentor junior colleagues. I also run design events for <a data-toggle="popover-hover" data-img="./casestudy/assets/events-b.jpg">underrepresented groups.</a>
 
 
 
@@ -357,7 +353,7 @@ Some other facts about me:
                     <div style="text-align: center">
                         <p class="col-md-12" style="color: #676767;"><i> I have known Arindra since June 2015, when we met in Startupbootcamp during the Selection Days. 
                           <br><br>Arindra since then has constantly shown his support by advising my team with product interactions for our app and website that creates a personal or commercial identity and verifiable documents on a distributed ledger.
-It was impressive as in a very short time Arindra understood the core concepts of Blockchain and provided his advice on developing a conversational User interface for Tradle app.
+It was impressive as in a very short time Arindra understood the core concepts of Blockchain and provided his advice on developing a conversational User interface for Tradle app.</i> 
 
                         <p>- Gene Vayngrib</p>
                         <p style="font-size:16px;color:#9B9B9B !important;">CEO & Co Founder, Tradle
@@ -371,7 +367,7 @@ It was impressive as in a very short time Arindra understood the core concepts o
                     <div style="text-align: center">
                         <p class="col-md-12" style="color: #676767;"><i> His experience with startups as well as a wide range of domain expertise in technology, have been reflected from his mentoring profile where he is advising several high-tech UK startups with their product that includes startups based on machine learning, financial tech and SAAS based tools for businesses.
 
-                          <br><br>Mentoring startups at MassChallenge’s accelerator program requires sincere commitment and dedication for a period of four months. Arindra took the time to be a mentor alongside his regular working hours providing a significant contribution to the digital economy.
+                          <br><br>Mentoring startups at MassChallenge’s accelerator program requires sincere commitment and dedication for a period of four months. Arindra took the time to be a mentor alongside his regular working hours providing a significant contribution to the digital economy.</i> 
 
                         <p>- Martin Sharman</p>
                         <p style="font-size:16px;color:#9B9B9B !important;">Operations Director, MassChallenge
@@ -383,7 +379,7 @@ It was impressive as in a very short time Arindra understood the core concepts o
 <br>
                     <br>
                     <div style="text-align: center">
-                        <p class="col-md-12" style="color: #676767;"><i> Arindra has been a great help to us during our time on the Startupbootcamp programme. He has provided a fresh approach to our product design and a good sounding board when feeding back on projects we've had completed elsewhere. A good guy and an all round pleasure to work with.
+                        <p class="col-md-12" style="color: #676767;"><i> Arindra has been a great help to us during our time on the Startupbootcamp programme. He has provided a fresh approach to our product design and a good sounding board when feeding back on projects we've had completed elsewhere. A good guy and an all round pleasure to work with.</i> 
 
                         <p>- Gareth Lewis</p>
                         <p style="font-size:16px;color:#9B9B9B !important;">CEO and Cofounder, Delio Wealth
@@ -401,11 +397,24 @@ It was impressive as in a very short time Arindra understood the core concepts o
     </div>
 
    <div class="jumbotron p-4 p-md-5 bg-white">
-           <hr class="section-divider">
-         <div id="archives"> </div><br><br><br><br>
 
-          <div class="col-md-8 offset-md-2" style="text-align: center;"> <h3 >Archives</h3></div>
-             <div class="row">
+ <div class="col-md-12" style="text-align: center;">
+
+            <hr class="section-divider">
+            <div id="archives"> </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <h3 style="text-align: center;">Archives</h3>
+            <br>
+            <br>
+            <br>
+            <br>
+              </div>
+
+            <div class="row">
 
             <div class="col-md-4">
             <img src="./casestudy/assets/folio-archive/archive-doc.jpg" class="img-fluid box-body-img" alt="Responsive image">
@@ -476,11 +485,15 @@ It was impressive as in a very short time Arindra understood the core concepts o
 <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
 <script type="text/javascript">
-$('#panelPrecios [data-toggle="tooltip"]').tooltip({
-    animated: 'fade',
-    placement: 'bottom',
-    html: true
-});
+  
+    // popovers initialization - on hover
+    $('[data-toggle="popover-hover"]').popover({
+      html: true,
+      trigger: 'hover',
+      placement: 'bottom',
+      content: function () { return '<img src="' + $(this).data('img') + '" />'; }
+    });
+
 
 </script>
 
