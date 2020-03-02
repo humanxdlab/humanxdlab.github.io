@@ -482,20 +482,19 @@ It was impressive as in a very short time Arindra understood the core concepts o
             </p>
         </div>
     </footer>
-<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/core.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-<script type="text/javascript">
-  
-    // popovers initialization - on hover
-    $('[data-toggle="popover-hover"]').popover({
-      html: true,
-      trigger: 'hover',
-      placement: 'bottom',
-      content: function () { return '<img src="' + $(this).data('img') + '" />'; }
-    });
+<div class="container">
+  <h3>Tooltip Example</h3>
+  <a href="#" data-toggle="tooltip" title="Hooray!">Hover over me</a>
+</div>
 
-
+<script>
+$(document).ready(function(){
+  $('[data-toggle="tooltip"]').tooltip();   
+});
 </script>
+
 
 </body>
 </html>
