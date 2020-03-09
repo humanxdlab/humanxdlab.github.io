@@ -236,6 +236,15 @@ a:visited {
     }
 }
 
+
+@media (max-width: 768px) {
+    .client-logo-hide {
+        display: none;
+    }
+}
+
+
+
 .jumbotron p:last-child {
     margin-bottom: 0;
 }
