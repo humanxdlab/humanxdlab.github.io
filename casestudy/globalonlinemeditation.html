@@ -13,9 +13,12 @@
 
     <!-- Bootstrap core CSS -->
     <link rel='icon' href='./assets/logo-akd.png' type='image/x-icon'/ >
-    <link href="./css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+
+   <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+ <link href="./css/bootstrap.min.css" rel="stylesheet">
+
+
 
 
     <!-- Custom styles for this template -->
@@ -52,9 +55,7 @@
 <div class="col-md-2"><a href="https://www.embodhibreath.life/online">Link</a></div>
 <div class="col-md-10 offset-md-1">
                 <hr class="section-divider"></div>  
-                <br> <br>
-            <br>
-            <br>
+       
         </div>
     </div>
 
@@ -63,19 +64,22 @@
 
 
 <div class="container">
-  <h2>Filterable Table</h2>
+  <h2>Online Sessions</h2>
   <p>Type something in the input field to search the table for first names, last names or emails:</p>  
   <input class="form-control" id="myInput" type="text" placeholder="Search..">
   <br>
-  <table class="table table-bordered table-striped" id="online_table">
-    <thead>
+  <table class="table table-bordered table-striped"> 
+       
+
       <tr>
         <th>Firstname</th>
         <th>Lastname</th>
         <th>Email</th>
       </tr>
-    </thead>
-    <tbody id="myTable">
+  </table>
+      <table class="table table-bordered table-striped" id="online_table"> 
+         <tbody id="myTable">
+
       <tr>
         <td>John</td>
         <td>Doe</td>
@@ -99,7 +103,6 @@
     </tbody>
   </table>
   
-  <p>Note that we start the search in tbody, to prevent filtering the table headers.</p>
 </div>
 
 
@@ -117,7 +120,7 @@
             <p class="text-center footer-copyright-text" style="font-size: 14px">
                 handcrafted ✍🏽 with ❤︎ by Arindra Das
                 <br>
-                <!-- © Copyright 2020. All rights reserved | Human Experience Design Lab is a trading brand name for Junak Limited. Registered in England and Wales. Company Number. 10663544  -->
+              
             </p>
         </div>
     </footer>
@@ -135,25 +138,27 @@ $(document).ready(function(){
 </script>
 
 
-   <script type="text/javascript">
+</body>
+
+</html>
+
+
+   <script>
        
        $(document).ready(function(){
         $.getJSON('online.json', function(data) {
             var online_data = '';
                 $.each(data, function(key, value){
                     online_data += '<tr>';
-                    online_data += '<td>' +value.Firstname + '</td>';
-                    online_data += '<td>' +value.Lastname + '</td>';
-                    online_data += '<td>' +value.Email + '</td>';
+                    online_data += '<td>'+value.firstname+'</td>';
+                    online_data += '<td>'+value.lastname+'</td>';
+                    online_data += '<td>'+value.email+'</td>';
                     online_data += '</tr>';
                 });
 
+            // console.log(JSON.stringify(online_data))
             $('#online_table').append(online_data);
         });
     });
 
    </script>
-
-</body>
-
-</html>

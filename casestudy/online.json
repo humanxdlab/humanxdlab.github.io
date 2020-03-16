@@ -1,7 +1,7 @@
 [
-{
-  "Firstname":"David",
-  "Lastname":"Den",
-  "Email":"john@example.com",
-}
+ {
+  "firstname":"David",
+  "lastname":"Den",
+  "email":"john@example.com"
+ }
 ]
