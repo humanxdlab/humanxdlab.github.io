@@ -31,51 +31,34 @@
 <body>
 
 
-<nav class="navbar sticky">
-        <a href="../folio.html#cases" style="color: #333;"><img src="./assets/icon-back.svg"> Back</a>
- <br><br>
-<div style="float: right;">
-       <a href="../folio.html#about" style="color: #002E44;"><img src="./assets/logo-akd.svg" width="70%" ></a>
-
-   </div>
-  </div>
-</nav>
 
 
 
 
-    <div class="jumbotron p-4 p-md-5 bg-yuvoh">
-     <br><br><br><br><br>       
-      <div class="row">
-<div class="col-md-10 offset-md-1">16 March 2020 19:00 GMT</div> 
-<div class="col-md-10 offset-md-1"><h3>Breathing for Vitality</h3></div>            
-<div class="col-md-3 offset-md-1">Hanna-Jade Browne</div>
-<div class="col-md-3">Embodhi Breath</div>
-<div class="col-md-3">London</div>
-<div class="col-md-2"><a href="https://www.embodhibreath.life/online">Link</a></div>
-<div class="col-md-10 offset-md-1">
-                <hr class="section-divider"></div>  
+    <main role="main" class="container">
+
+ <div class="row">
+  <div class="col-md-10 offset-md-1 sticky">
+      <br>
+      <h2>Global online database</h2> <br>
+    <input class="form-control" id="myInput" type="text" placeholder="Search by studio, country.."><br>
+    <p> <i>Cannot find your studio, fill the form?</i></p>  
+ <table class="table table-bordered table-striped"> 
        
-        </div>
-    </div>
+<tr>
 
-
-
-<div class="container">
-  <h2>Online Sessions</h2>
-  <p>Type something in the input field to search the table for first names, last names or emails:</p>  
-  <input class="form-control" id="myInput" type="text" placeholder="Search..">
-  <br>
-  <table class="table table-bordered table-striped"> 
-       
-
-      <tr>
-        <th>Title</th>
-        <th>Link</th>
-        <th>Date</th>
-        <th>Type</th>
+        <th>Name of your studio/company/brand</th>
+        <th>Contact (Email Address)</th>
+        <th>Online Website Link</th>
+        <th>Do you provide any free online classes?</th>
       </tr>
   </table>
+  </div>
+
+
+            <div class="col-md-10 offset-md-1" style="margin-top: 15em;">
+
+ 
       <table class="table table-bordered table-striped" id="online_table"> 
          <tbody id="myTable">
 
@@ -89,6 +72,8 @@
   </table>
   
 </div>
+</div>
+</div>
 
 
 
@@ -96,7 +81,7 @@
   
     <footer class="main-footer">
         <div class="container">
-            <a href="../folio.html" style="color: #333;"><img src="./assets/icon-back.svg"> Back</a>
+            
             <br>
             <br>
             <br>
@@ -136,11 +121,11 @@ $(document).ready(function(){
             var online_data = '';
                 $.each(data, function(key, value){
                     online_data += '<tr>';
-                    online_data += '<td>'+value.title+'</td>';
+                    online_data += '<td style="font-size:24px;">'+value.title+'</td>';
                     online_data += '<td>'+value.contact+'</td>';
-                    online_data += '<td>'+'<a href="'+value.link+'" target="_blank">Link</a></td>';
                     online_data += '<td>'+value.country+'</td>';
                     online_data += '<td>'+value.type+'</td>';
+                    online_data += '<td>'+'<a href="'+value.link+'" target="_blank">Link</a></td>';
                     online_data += '</tr>';
                 });
 
