@@ -7,22 +7,18 @@
     <meta name="description" content="portfolio">
     <meta name="author" content="Arindra Das">
     <meta name="generator" content="Jekyll v3.8.5">
-    <title>Arindra Das - UX Design, Strategy & Research</title>
+    <title>Arindra Das - Design, Strategy & Research</title>
 
     <!-- Bootstrap core CSS -->
     <link rel='icon' href='./casestudy/assets/logo-akd.png' type='image/x-icon' />
-    <link href="./casestudy/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="./casestudy/css/custom.css" rel="stylesheet">
-    <link rel='stylesheet' id='fontawesome-css' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' type='text/css' media='all' />
+    <link href="./casestudy/css/newcustom.css" rel="stylesheet">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 
-    <style>
-.hover_img a { position:relative; }
-.hover_img a span { position:absolute; display:none; z-index:99; }
-.hover_img a:hover span { display:block; }
-
-    </style>
+    <!-- <style>
+    </style> -->
 
 </head>
 
@@ -50,10 +46,12 @@
         </div>
     </nav>
 
+
+
     <div class="jumbotron p-4 p-md-5">
 
          <div id="about"></div>
-                <br><br>
+        <br><br>
 
 
 
@@ -66,13 +64,7 @@
                   </div>
                   <div style="text-align: center;">
                                 <ul class="link-icons" style="padding-inline-start: 0px !important;">
-                                    <li>
-                                        <a href="./casestudy/adcv.pdf" target="_blank" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Check my resume">
-                                            <svg class="svg-inline--fa fa-file-alt fa-w-12 fa-fw" alt="Download my resume" aria-hidden="true" data-fa-processed="" data-prefix="fas" data-icon="file-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                                                <path fill="currentColor" d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm64 236c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-64c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-72v8c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm96-114.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z"></path>
-                                            </svg>
-                                        </a>
-                                    </li>
+
                                     <li>
                                         <a href="https://www.linkedin.com/in/arindradas/" target="_blank" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Connect with me on LinkedIn">
                                             <svg class="svg-inline--fa fa-linkedin-in fa-w-14 fa-fw" target="_blank" aria-hidden="true" data-fa-processed="" data-prefix="fab" data-icon="linkedin-in" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
@@ -81,16 +73,16 @@
                                         </a>
                                     </li>
 
-                                    <!-- <li>
+                                    <li>
                                         <a href="https://www.instagram.com/humanxdesigns/" target="_blank" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="View my Instagram">
                                             <svg class="svg-inline--fa fa-instagram fa-w-14 fa-fw" aria-hidden="true" data-fa-processed="" data-prefix="fab" data-icon="instagram" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                                                 <path fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path>
                                             </svg>
                                         </a>
-                                    </li> -->
+                                    </li>
                                     <li>
                                         <a href="mailto:arindra@humanxdlab.com?Subject=Hello%20Arindra" target="_blank" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Send me an Email">
-                                            <svg class="svg-inline--fa fa-envelope fa-w-16 fa-fw" aria-hidden="true" data-fa-processed="" data-prefix="far" data-icon="envelope" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <svg class="svg-inline--fa fa-twitter fa-w-16 fa-fw" aria-hidden="true" data-fa-processed="" data-prefix="far" data-icon="twitter" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                 <path fill="currentColor" d="M464 64H48C21.49 64 0 85.49 0 112v288c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V112c0-26.51-21.49-48-48-48zm0 48v40.805c-22.422 18.259-58.168 46.651-134.587 106.49-16.841 13.247-50.201 45.072-73.413 44.701-23.208.375-56.579-31.459-73.413-44.701C106.18 199.465 70.425 171.067 48 152.805V112h416zM48 400V214.398c22.914 18.251 55.409 43.862 104.938 82.646 21.857 17.205 60.134 55.186 103.062 54.955 42.717.231 80.509-37.199 103.053-54.947 49.528-38.783 82.032-64.401 104.947-82.653V400H48z"></path>
                                             </svg>
                                         </a>
@@ -123,7 +115,7 @@
               </div>
 
             <div class="col-md-6" style="text-align:left;">
-                <p style="font-size: 1em;">Hi 👋🏼,
+                <p style="font-size: 1em;">
                     <br>
                     <br> I’m a User Experience designer with experience designing services and products across diverse domains such as healthcare, archives, finance, insurance, property and education.
                     <br>
