@@ -19,7 +19,7 @@ p {
 
 .heading {
 font-family: 'Baskerville BT', sans-serif;
-font-size: 1.6em;
+font-size: 1.3em;
 font-weight: 400;
 margin-bottom: 10px;
 }
@@ -67,6 +67,9 @@ a:hover {
   -webkit-text-decoration-color: #B59690;
 } */
 
+.mute{
+  color: #707070 !important;
+}
 
 
 @media (min-width: 768px) {
@@ -140,6 +143,37 @@ a:hover {
 .header {
   color: ##575757;
 }
+
+
+.callout {
+  padding: 20px;
+  margin: 20px 0;
+  border-left: 1px solid #CDBAB9;
+  background-color: #D0CECE;
+  border-left-width: 5px;
+  h4 {
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
+  p:last-child {
+    margin-bottom: 0;
+  }
+  code {
+    border-radius: 3px;
+  }
+  & + .bs-callout {
+    margin-top: -5px;
+  }
+}
+@each $name,$color in (default,#777),(primary,#428bca),(success,#5cb85c),(danger,#d9534f),(warning,#f0ad4e),(info,#5bc0de), (bdc,#29527a) {
+  .callout-#{$name} {
+    border-left-color: $color;
+    h4 {
+      color: $color;
+    }
+  }
+}
+
 
 
 /*Folio.html*/
