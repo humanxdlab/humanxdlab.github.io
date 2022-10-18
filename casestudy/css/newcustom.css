@@ -54,6 +54,11 @@ a {
 	text-decoration-color: #89809A;
 }
 
+
+.link-colored {
+	text-decoration-color: #FB6955 !important;
+}
+
 /* show underline on hover */
 a:hover {
 	text-decoration: underline;
