@@ -10,12 +10,28 @@ h5,
 h6{
 font-family: 'Baskerville', sans-serif;
 font-family: 'Baskerville BT', sans-serif;
+}
+
+
+h1,
+h2,
+h3{
 color: #ae2012;
+}
+
+small{
+  font-size: 0.8em;
+  line-height: 0.8em;
 }
 
 body,
 p {
+  font-size: 1.08em;
   font-family: 'Poppins', sans-serif;
+}
+
+li {
+  margin-bottom:10px; 
 }
 
 .heading {
@@ -58,6 +74,7 @@ a {
   color: #17132D;
 	text-decoration: underline;
 	text-decoration-color: #89809A;
+  text-underline-offset: 10%;
 }
 
 
@@ -74,11 +91,12 @@ a:hover {
 }
 
 .section-title{
-  letter-spacing:0.2em;
+  letter-spacing:0.1em;
   color:#403d39;
   text-transform: uppercase;
-  font-weight:500;
-  margin-bottom: 20px;
+  font-weight:400;
+  margin-bottom: 15px;
+  font-size: 1.0em;
 }
 /* a:visited {
   text-decoration: underline;
